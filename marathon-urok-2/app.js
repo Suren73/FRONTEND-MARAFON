@@ -5,7 +5,6 @@ item.addEventListener('dragstart', dragstart);
 item.addEventListener('dragend', dragend);
 
 for (const placeholder of placeholders) {
-  console.log(placeholder);
   placeholder.addEventListener('dragover', dragover);
   placeholder.addEventListener('dragenter', dragenter);
   placeholder.addEventListener('dragleave', dragleave);
@@ -18,7 +17,6 @@ function dragstart(event) {
 }
 
 function dragend(event) {
-  console.log('drag end');
   event.target.className = 'item';
 }
 

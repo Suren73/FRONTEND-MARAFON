@@ -19,6 +19,14 @@ downBtn.addEventListener('click', () => {
   chengeSlide('down');
 });
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowUp') {
+    chengeSlide('up');
+  } else if (event.key === 'ArrowDown') {
+    chengeSlide('down');
+  }
+});
+
 function chengeSlide(direction) {
   if (direction === 'up') {
     activeSlideIndex++;

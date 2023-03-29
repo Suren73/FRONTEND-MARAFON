@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   color: #fff;
-  font-family: "Khula", sans-serif;
+  font-family: 'Khula', sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -95,8 +95,23 @@ h1 {
 }
 
 .circle {
-  background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  /* background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%); */
   position: absolute;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.back-btn {
+  border: 2px solid #c0c0c0;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.back-btn:hover {
+  border: 2px solid #16d9e3;
+  color: #16e36f;
+  background: #fff;
   cursor: pointer;
 }
